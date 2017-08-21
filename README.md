@@ -11,7 +11,7 @@
 ## Class Materials
 
  * [Syllabus and course description](http://sancerre.as.arizona.edu/~fan/Home/AST502-information.html)
- * [Lectures 1: Introduction](classnotebooks/ast502-lecture1.key)
+ * [Lectures 1: Introduction](ast502-lecture1.key)
  
  
 ## Reference textbook
