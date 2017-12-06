@@ -1,0 +1,7 @@
+# .coveragerc to control coverage.py
+[run]
+concurrency = multiprocessing
+source = ./pyklip
+
+[html]
+directory = coverage_html_report

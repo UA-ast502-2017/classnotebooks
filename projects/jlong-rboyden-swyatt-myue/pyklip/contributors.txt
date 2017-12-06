@@ -1,0 +1,33 @@
+Jonathan Aguilar: wrote the P1640 interface, implemented satellite spot scaling
+
+Jason Wang: wrote the GPI interface, wrote the bulk of the KLIP implementation, designed and wrote the parallelized infrastructure for the codebase
+
+JB Ruffio: wrote the autodetection code, wrote and optimized the KLIP-FM math, implmented many of the KLIP-FM features
+
+Rob de Rosa: tested the code and wrote the nan interpolation checking, implemented 'onesegment' for KLIP
+
+Schuyler Wolff: tested the code and debugged the ADI functionality
+
+Zack Briesemeister: contributed some of the initial KLIP-FM
+
+Abhijith Rajan: added interface for NIRC2
+
+Kate Follette: led interface for MagAO
+
+Maxwell Millar-Blanchaer: helped develop and test the RDI functionality
+
+Alexandra Greenbaum: leading the development of the KLIP-FM spectral extraction library
+
+Tom Esposito: Helped with the NIRC2 interface, and the disk forward modelling
+
+Simon Ko: added coverage reports to the continuous integration, documented the pyKLIP build system, improved testing
+
+Elijah Spiro: helped develop the MagAO interface
+
+Laurent Pueyo: helped with optimizing the algorithm and provided very useful advice
+
+Pauline Arriaga: wrote disk forward modelling code
+
+Bin Ren: Wrote the NMF code
+
+Alan Rainot: Added support for SPHERE DC data to the SPHERE interface

@@ -1,0 +1,33 @@
+# This is a sample build configuration for Python.
+# Only use spaces to indent your .yml configuration.
+# -----
+# You can specify a custom docker image from Dockerhub as your build environment
+image: continuumio/anaconda3
+
+pipelines:
+  default:
+    - step:
+        script: # Modify the commands below to build your repository.
+          # - git clone https://semaphoreP@bitbucket.org/pyKLIP/pyklip.git pyklip
+          - ls 
+          - ls pyklip
+          # - cd pyklip # move into repo base dir
+          # - ls pyklip
+          - ls pyklip/instruments
+          
+          # install some more dependencies
+          - pip install emcee
+          - pip install corner
+          
+          # install pyklip
+          - python setup.py develop
+          
+          # setup coveralls
+          - pip install coveralls
+          - conda install -c https://conda.anaconda.org/astropy photutils
+
+
+          #Coverage and Coverall hooking
+          - coverage run --source ./pyklip -m py.test
+          - coverage combine
+          - COVERALLS_REPO_TOKEN=$COVERALLS_REPO_TOKEN_2 coveralls

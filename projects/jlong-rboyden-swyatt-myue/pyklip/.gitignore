@@ -1,0 +1,22 @@
+#ignore file extensions
+*.out
+*.pyc
+*.zip
+
+#ignore fits files
+!pyklip/pickles/*.fits
+!pyklip/filters/*.fits
+version.py
+tests/*.fits
+examples/*.fits
+*.pkl
+
+#ignore auxiliary directories
+pyklip.egg-info/
+gitstats/
+.idea/
+.vscode/
+testing_scripts/
+docs/build/
+.cache/
+examples/.ipynb_checkpoints/
